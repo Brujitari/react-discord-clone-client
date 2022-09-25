@@ -12,5 +12,4 @@ jobs:
       - uses: actions/checkout@v1
 
       - name: deploy to Vercel
-        id: branch_deploy_vercel
         run: npx vercel --confirm -n ${{ secrets.VERCEL_PROJECT_ID }} -t ${{ secrets.DISCORD_FRONT_TOKEN }} --scope ${{ secrets.VERCEL_ORG_ID }} -e REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }} -b REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }}
