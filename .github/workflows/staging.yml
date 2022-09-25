@@ -3,7 +3,7 @@ name: (STAGING) build, vercel
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
