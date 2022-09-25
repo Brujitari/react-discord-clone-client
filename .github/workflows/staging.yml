@@ -12,5 +12,5 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: deploy to Vercel
-        run: npx vercel --confirm -n ${{ secrets.VERCEL_PROJECT_ID }} -t ${{ secrets.DISCORD_FRONT_TOKEN }} --scope ${{ secrets.VERCEL_ORG_ID }} -e REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }} -b REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }}
+      - name: deploy in staging
+        run: npx vercel --confirm -n ${{ secrets.PROJECT_ID }} -t ${{ secrets.DISCORD_FRONT_TOKEN }} --scope ${{ secrets.ORG_ID }} -e REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }} -b REACT_APP_API_URL=${{ secrets.REACT_APP_API_URL }}
