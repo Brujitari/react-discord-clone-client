@@ -10,10 +10,13 @@ function AuthPage() {
   const { user, setUser } = useGetter();
   const navigate = useNavigate();
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const login = useLogin({ onSuccess: () => navigate("/products") });
+  const login = useLogin({ onSuccess: () => navigate("/main") });
 
   const handleClick = () => navigate("/register");
-  const onSubmit = (data) => login(data);
+  const onSubmit = (data) => {
+    login(data)
+    navigate("/main") //onSuccess no va, por eso añadí esto
+  };
 
   useEffect(() => {
     setUser();
