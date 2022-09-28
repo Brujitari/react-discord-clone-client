@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/Brujitari/react-discord-clone-client/compare/v0.1.2...v0.1.3) (2022-09-28)
+
+
+### Features
+
+* basic navbar ([d9b659f](https://github.com/Brujitari/react-discord-clone-client/commit/d9b659feec6baaf2b82c474e420aa96d91b18dea))
+* basic navbar ([6e74d43](https://github.com/Brujitari/react-discord-clone-client/commit/6e74d43256140a6fde6927069d452916827e18a8))
+
 ### [0.1.2](https://github.com/Brujitari/react-discord-clone-client/compare/v0.1.1...v0.1.2) (2022-09-28)
 
 ### 0.1.1 (2022-09-28)
