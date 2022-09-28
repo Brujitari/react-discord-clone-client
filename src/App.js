@@ -1,9 +1,13 @@
-import './App.css';
-//use REACT_APP_ in front of every variable
+import './App.scss';
+import { Outlet } from "react-router-dom"
+
 function App() {
   return (
     <div className="App">
-     <p>holi</p>
+      <Outlet />
+      <navbar className="navbar">
+        navbar
+      </navbar>
     </div>
   );
 }
