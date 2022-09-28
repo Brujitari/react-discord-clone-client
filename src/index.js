@@ -8,7 +8,7 @@ import Context, { useGetter } from "store";
 import App from "./App";
 import Register from "pages/auth/register";
 import Login from "pages/auth/login";
-// import HomePage from './pages/HomePage';
+import Main from 'pages/main';
 // import ProductPage from "./pages/ProductPage";
 // import { ProductDetails } from "components/productDetails/ProductDetails";
 // import RouteNotFound from "components/routeNotFound";
@@ -37,6 +37,7 @@ const Container = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />} >
+            <Route path="/main" element={<Main />} />
           </Route>
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
